@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yahya Moudnib – Développeur web Full Stack junior</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F8F4;--ink:#12261F;--mute:#4D6358;--card:#FFFFFF;--line:#D6E2DA;--pine:#14463A;--mint:#CFEBDD;--on-pine:#F5F8F4;--bad:#B3261E;--good:#1B7A4B;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1A16;--ink:#E8F1EC;--mute:#9DB3A7;--card:#15251F;--line:#25382F;--pine:#7FD3AE;--mint:#1D3A2F;--on-pine:#0E1A16;--bad:#FF8A80;--good:#6FD9A3}}
+:root[data-theme="dark"]{--bg:#0E1A16;--ink:#E8F1EC;--mute:#9DB3A7;--card:#15251F;--line:#25382F;--pine:#7FD3AE;--mint:#1D3A2F;--on-pine:#0E1A16;--bad:#FF8A80;--good:#6FD9A3}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Figtree",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--pine);outline-offset:3px}
+.wrap{max-width:880px;margin:0 auto;padding:0 22px}
+nav{display:flex;flex-wrap:wrap;gap:6px 22px;padding:20px 0;font-weight:600}
+nav a{text-decoration:none;color:var(--mute)}nav a:hover{color:var(--pine)}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+.hero{padding:56px 0 64px}
+.hero h1{font-size:clamp(3rem,11vw,6.2rem);font-weight:800;letter-spacing:-.03em}
+.hero .role{font-size:clamp(1.15rem,3vw,1.5rem);color:var(--pine);font-weight:600;margin:18px 0 8px}
+.hero p{max-width:34em;color:var(--mute);margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--pine)}
+.btn.fill{background:var(--pine);color:var(--on-pine)}.btn:hover{opacity:.88}
+section{padding:46px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.7rem,5vw,2.3rem);font-weight:800;margin-bottom:20px}
+.about{max-width:38em}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.skills h3{font-size:1.05rem;margin-bottom:10px;color:var(--pine)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{background:var(--mint);padding:5px 14px;border-radius:999px;font-weight:600;font-size:.95rem}
+.chips.later li{background:transparent;border:1.5px dashed var(--mute);color:var(--mute)}
+.project{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+.project h3{font-size:1.5rem;margin-bottom:6px}
+.meta{color:var(--mute);margin:0 0 14px}
+.project ul{padding-left:20px;margin:0 0 16px}
+.demo{margin-top:22px;border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--bg)}
+.demo h4{margin:0 0 4px;font:800 1.05rem "Bricolage Grotesque",sans-serif}
+.demo small{color:var(--mute)}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.stat{flex:1 1 90px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.stat b{display:block;font-size:1.5rem;font-family:"Bricolage Grotesque",sans-serif}
+.demo input{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit;margin-bottom:10px}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.95rem;min-width:420px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mute);font-weight:600}
+.ok{color:var(--good);font-weight:600}.ko{color:var(--bad);font-weight:600}
+tr.exp td{background:color-mix(in srgb,var(--bad) 10%,transparent)}
+.timeline{border-left:3px solid var(--pine);padding-left:20px;max-width:38em}
+.timeline p{margin:2px 0}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:8px}
+.contact a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none}
+.contact a:hover{border-color:var(--pine)}
+.contact span{display:block;color:var(--mute);font-size:.9rem}
+.contact b{overflow-wrap:anywhere}
+footer{padding:30px 0 40px;color:var(--mute);font-size:.9rem;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Navigation">
+<a href="#apropos">À propos</a><a href="#competences">Compétences</a><a href="#projet">Projet</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a>
+</nav>
+
+<header class="hero">
+<h1>Yahya Moudnib</h1>
+<div class="role">Développeur web Full Stack junior · Safi, Maroc</div>
+<p>Étudiant en développement digital à l’OFPPT, je construis des applications web claires et fonctionnelles, et je cherche un stage pour progresser auprès de professionnels.</p>
+<div class="btns">
+<a class="btn fill" href="#projet">Voir mon projet</a>
+<a class="btn" href="#contact">Me contacter</a>
+</div>
+</header>
+
+<section id="apropos">
+<h2>À propos</h2>
+<p class="about">Je m’appelle Yahya, j’habite à Safi. Je suis en 2<sup>e</sup> année de Technicien Spécialisé en Développement Digital option Web Full Stack (DEVOWFS) à l’OFPPT, ISTA NTIC. J’aime comprendre comment les choses fonctionnent, travailler en équipe et apprendre chaque jour de nouvelles technologies.</p>
+</section>
+
+<section id="competences">
+<h2>Compétences</h2>
+<div class="skills">
+<div><h3>Front-end</h3><ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
+<div><h3>Back-end et données</h3><ul class="chips"><li>PHP</li><li>SQL</li></ul></div>
+<div><h3>Outils</h3><ul class="chips"><li>VS Code</li><li>GitHub</li></ul></div>
+<div><h3>En cours d’apprentissage</h3><ul class="chips later"><li>React</li><li>Laravel</li></ul></div>
+<div><h3>Langues</h3><ul class="chips"><li>Arabe : natif</li><li>Français : intermédiaire</li><li>Anglais : intermédiaire</li></ul></div>
+</div>
+</section>
+
+<section id="projet">
+<h2>Projet</h2>
+<article class="project">
+<h3>Gestion d’une pharmacie</h3>
+<p class="meta">Projet de formation · encadré par Mme Omni Hosna · 2025–2026</p>
+<p>Application web pour gérer les médicaments d’une pharmacie : on les ajoute, les modifie, les supprime et les recherche, et l’application repère automatiquement les produits expirés.</p>
+<ul>
+<li>Statistiques : total, produits expirés, stock faible</li>
+<li>Données sauvegardées dans le navigateur avec LocalStorage</li>
+<li>Interface responsive, manipulation du DOM et gestion des événements</li>
+</ul>
+<ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+
+<div class="demo">
+<h4>Aperçu interactif</h4>
+<small>Mini-démo avec des données d’exemple, inspirée du projet.</small>
+<div class="stats">
+<div class="stat"><b id="total">0</b>Total</div>
+<div class="stat"><b id="expire">0</b>Expirés</div>
+<div class="stat"><b id="faible">0</b>Stock faible</div>
+</div>
+<input id="q" type="search" placeholder="Rechercher un médicament" aria-label="Rechercher un médicament">
+<div class="tw"><table>
+<thead><tr><th>Code</th><th>Nom</th><th>Prix</th><th>Qté</th><th>Expiration</th><th>État</th></tr></thead>
+<tbody id="rows"></tbody>
+</table></div>
+</div>
+</article>
+</section>
+
+<section id="parcours">
+<h2>Parcours</h2>
+<div class="timeline">
+<p><b>2024 – 2026</b></p>
+<p>Technicien Spécialisé en Développement Digital option Web Full Stack (DEVOWFS)</p>
+<p style="color:var(--mute)">OFPPT – ISTA NTIC, Safi</p>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Je cherche un stage en développement web. Écrivez-moi, je réponds vite.</p>
+<div class="contact">
+<a href="mailto:yahyamoudnib@gmail.com"><span>Email</span><b>yahyamoudnib@gmail.com</b></a>
+<a href="tel:+212629548169"><span>Téléphone</span><b>0629548169</b></a>
+<a href="https://github.com/yahyamoudnib" target="_blank" rel="noopener"><span>GitHub</span><b>github.com/yahyamoudnib</b></a>
+<a href="https://www.linkedin.com/in/yahya-moudnib-199580449" target="_blank" rel="noopener"><span>LinkedIn</span><b>Yahya Moudnib</b></a>
+</div>
+</section>
+
+<footer>© 2026 Yahya Moudnib</footer>
+</div>
+
+<script>
+const data=[
+ {code:"M001",nom:"Doliprane 1000 mg",prix:12.5,qte:40,date:"2027-08-15"},
+ {code:"M002",nom:"Amoxicilline 500 mg",prix:35,qte:3,date:"2027-02-01"},
+ {code:"M003",nom:"Sirop pour la toux",prix:28,qte:12,date:"2025-09-30"},
+ {code:"M004",nom:"Vitamine C",prix:20,qte:25,date:"2027-11-20"},
+ {code:"M005",nom:"Pommade cicatrisante",prix:45,qte:2,date:"2026-01-10"}
+];
+const rows=document.getElementById("rows"),q=document.getElementById("q");
+function render(){
+  const now=new Date(),v=q.value.toLowerCase();let exp=0,low=0;
+  rows.innerHTML="";
+  data.forEach(m=>{
+    const e=new Date(m.date)<now;if(e)exp++;if(m.qte<5)low++;
+    const txt=(m.code+" "+m.nom).toLowerCase();
+    if(!txt.includes(v))return;
+    const tr=document.createElement("tr");if(e)tr.className="exp";
+    tr.innerHTML="<td>"+m.code+"</td><td>"+m.nom+"</td><td>"+m.prix+" DH</td><td>"+m.qte+"</td><td>"+m.date+'</td><td class="'+(e?"ko":"ok")+'">'+(e?"Expiré":"Valide")+"</td>";
+    rows.appendChild(tr);
+  });
+  document.getElementById("total").textContent=data.length;
+  document.getElementById("expire").textContent=exp;
+  document.getElementById("faible").textContent=low;
+}
+q.addEventListener("input",render);render();
+</script>
+</body>
+</html>
